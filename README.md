@@ -1,5 +1,7 @@
 # React + TypeScript + Vite
 
+[DSA for life](https://www.codecademy.com/article/what-is-dsa-understanding-data-structures-and-algorithms)
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
