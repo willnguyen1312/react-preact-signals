@@ -1,11 +1,11 @@
-import { computed, signal } from "@preact/signals-react";
+import { computed, signal, effect } from "@preact/signals-react";
 
 const count = signal(1);
 const doubleCount = computed(() => count.value * 2);
 
-setInterval(() => {
-  count.value++;
-}, 1000);
+effect(() => console.log(`Current count value: ${count.value}`));
+
+setInterval(() => count.value++, 1000);
 
 export default function App() {
   console.log("Call exactly once");
